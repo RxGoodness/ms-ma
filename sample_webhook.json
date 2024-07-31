@@ -1,0 +1,95 @@
+{
+    "job": {
+        "address": {
+            "confidence": {
+                "correct_name": true,
+                "correct_address": true,
+                "individual_firstname": "First name is correct.",
+                "individual_lastname": "Last name is correct.",
+                "individual_address": "Address is correct."
+            },
+            "log": [],
+            "first_name": "Nester",
+            "last_name": "Best",
+            "phone": "+254000000000",
+            "address": "No 12, Nester Street, Surulere, Lagos, Nigeria.",
+            "latitude": "6.58587",
+            "longitude": "3.23319",
+            "landmark": "Directions\nhttps://dev-nester.me/6684fe1bb5216b21d15g45e6",
+            "state": "Lagos",
+            "lga": "Alimosho",
+            "residence_image": "https://nester-bucket.sfo3.cdn.digitaloceanspaces.com/mobile/3431d2e0-3fac-11ef-b5fa-113e3dcf7960",
+            "individual_image": "https://nester-bucket.sfo3.cdn.digitaloceanspaces.com/mobile/35054f80-3fac-11ef-b5fa-113e3dcf7960",
+            "comment": "",
+            "verifiedBuildingType": "Multi-storey building",
+            "verifiedBuildingColour": "Yellow"
+        },
+        "guarantor": {
+            "log": [],
+            "testify": false
+        },
+        "witness": {
+            "signature": "https://nester-bucket.sfo3.cdn.digitaloceanspaces.com/mobile/35b4a250-3fac-11ef-b5fa-113e3dcf7960",
+            "firstname": "Alex",
+            "phone": "+2348100000000"
+        },
+        "business": {
+            "stakeholder_documents": [],
+            "interior_images": [],
+            "financials_image": []
+        },
+        "vehicle": {
+            "log": []
+        },
+        "real_estate": {
+            "log": [],
+            "embedded_structure": [],
+            "individual_assets": []
+        },
+        "agent": {
+            "address": "17 Nester Agent St, Ojota, Lagos 105102, Lagos, Nigeria",
+            "latitude": "6.5755686",
+            "longitude": "3.3821723"
+        },
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.23319,
+                6.58587
+            ]
+        },
+        "company_confirmed": true,
+        "lastModified": "2024-07-11T17:37:16.351Z",
+        "status": "verified",
+        "logs": [
+            "Job Assigned to Nester Verify on Thu Jul 11 2024",
+            "COMRADEISIBOR Accepted This Job on Thu Jul 11 2024",
+            "Job Started"
+        ],
+        "created_date": "2024-07-09T13:32:00.681Z",
+        "dueDateCheck": true,
+        "notificationCheck": false,
+        "paid": 0,
+        "subcriptionPaid": false,
+        "rejectionCount": 0,
+        "verificationCount": 1,
+        "deleted": 0,
+        "_id": "668fb71cdd8055001ebempaa",
+        "type": "address",
+        "admin_id": "663d23c3c2c09b0012725bgh",
+        "created_by": "663d23c3c2c09b0012725b6f",
+        "class": "individual",
+        "verification_date": "2024-07-11T10:42:32.030Z",
+        "reference": "BM/424388235",
+        "__v": 0,
+        "company_assigned": "5da68089b184bd72eca80729",
+        "company_reassigned_to": "663d23c3c2c09b0018325b6f",
+        "date_assigned": "2024-07-11T10:42:37.163Z",
+        "acceptedTime": "2024-07-11T11:19:03.884Z",
+        "agent_assigned": "630f1cac21f5e23f8e9806ed",
+        "startedDate": "2024-07-11T16:47:04.609Z",
+        "date_completed": "2024-07-11T17:37:15.215Z",
+        "certificate_link": "https://nester-storage.sfo3.cdpaces.com/jobs_certificate/c43bd3e0-4830-11ef-b0cc-8d34b0d493e3"
+    },
+    "state": "VERIFIED"
+}
