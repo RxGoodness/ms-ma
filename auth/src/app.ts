@@ -25,19 +25,17 @@ import express from 'express';
 import mongoose from 'mongoose';
 import { initializeRabbitMQ } from './services/MicroserviceConnections/initializeRabbitMQ';
 import { connectDB } from './config/database';
-// import { initializeRabbitMQ } from '.';
+import authRoutes from './routes/auth';
 
 const app = express();
 
-// Middleware
 app.use(express.json());
+
+// use routers
+app.use('/api/auth', authRoutes);
 
 // MongoDB connection
 connectDB()
-// mongoose.connect('mongodb://localhost:27017/netware-auth', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 

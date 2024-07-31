@@ -6,7 +6,7 @@ import { Register } from '../services';
 import { errorResponse, successResponse } from '../utils/responseHandler';
 import { Login } from '../services/Login';
 
-export const registerr = async (req: Request, res: Response) => {
+export const register = async (req: Request, res: Response) => {
     try {
       let {
         email,
