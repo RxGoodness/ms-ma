@@ -21,4 +21,5 @@ export const schema = {
   REDIS_PASSWORD: Joi.string().required(),
   REDIS_USERNAME: Joi.string().required(),
   REDIS_DB: Joi.number().required(),
+  RABBITMQ_URL: Joi.string().required()
   };

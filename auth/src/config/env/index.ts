@@ -25,5 +25,6 @@ export const config: ConfigTypes = {
   REDIS_PORT: envVariables.REDIS_PORT,
   REDIS_PASSWORD: envVariables.REDIS_PASSWORD,
   REDIS_USERNAME: envVariables.REDIS_USERNAME,
-  REDIS_DB: envVariables.REDIS_DB
+  REDIS_DB: envVariables.REDIS_DB,
+  RABBITMQ_URL: envVariables.RABBITMQ_URL
 };
