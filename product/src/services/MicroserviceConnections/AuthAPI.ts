@@ -1,20 +1,20 @@
-// import axios from "axios";
-// import { config } from "../../config/env";
-// const { AUTH_API_BASE_URL, AUTH_API_USERNAME, AUTH_API_PASSWORD } = config;
-
-// export const AuthAPI = axios.create({
-//   baseURL: AUTH_API_BASE_URL,
-//   auth: { username: AUTH_API_USERNAME, password: AUTH_API_PASSWORD },
-//   headers: { "Content-Type": "application/json" },
-// });
-
 import amqp from 'amqplib';
 
 const RABBITMQ_URL = 'amqp://localhost';
 const REPLY_QUEUE = 'amq.rabbitmq.reply-to';
 
-export const verifyToken = async (token: string) => {
-  return new Promise((resolve, reject) => {
+interface ValidationResponse {
+  valid: boolean;
+  user?: { 
+      _id: string;
+      email: string;
+     // password?: boolean;
+     name: string; };
+}
+
+// export const verifyToken = async (token: string) => {
+export const verifyToken = async (token: string): Promise<ValidationResponse> => {  
+return new Promise((resolve, reject) => {
     amqp.connect(RABBITMQ_URL, (err, connection) => {
       if (err) {
         return reject(err);

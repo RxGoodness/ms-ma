@@ -22,7 +22,7 @@
 
 import express from 'express';
 import mongoose from 'mongoose';
-import productRoutes from './routes/productRoutes';
+import productRoutes from './routes/product';
 import { connectDB } from './config/database';
 
 const app = express();

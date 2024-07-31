@@ -9,7 +9,7 @@
 // });
 
 import amqp from 'amqplib';
-import { validateToken } from '../AuthService/authToken'
+import { validateToken } from '../authToken'
 
 const RABBITMQ_URL = 'amqp://localhost';
 

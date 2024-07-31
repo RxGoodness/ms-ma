@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import Product from '../models/productModel';
+import Product from '../models/product.model';
 
 export const createProduct = async (req: Request, res: Response) => {
   try {
-    const product = new Product({ ...req.body, ownerId: req.user.id });
+    const product = new Product({ ...req.body, ownerId: req.user._id });
     await product.save();
     res.status(201).json(product);
   } catch (error) {
