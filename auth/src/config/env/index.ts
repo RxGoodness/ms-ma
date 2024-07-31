@@ -26,5 +26,6 @@ export const config: ConfigTypes = {
   REDIS_PASSWORD: envVariables.REDIS_PASSWORD,
   REDIS_USERNAME: envVariables.REDIS_USERNAME,
   REDIS_DB: envVariables.REDIS_DB,
-  RABBITMQ_URL: envVariables.RABBITMQ_URL
+  RABBITMQ_URL: envVariables.RABBITMQ_URL,
+  REPLY_QUEUE: envVariables.RABBITMQ_URL
 };

@@ -1,7 +1,8 @@
 import amqp from 'amqplib';
+import { config } from "../../config/env";
 
-const RABBITMQ_URL = 'amqp://localhost';
-const REPLY_QUEUE = 'amq.rabbitmq.reply-to';
+const { RABBITMQ_URL, REPLY_QUEUE } =
+  config;
 
 interface ValidationResponse {
   valid: boolean;

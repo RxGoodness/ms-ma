@@ -6,7 +6,7 @@ export const schema = {
     .valid("development", "production", "test")
     .default("development"),
   APP_NAME: Joi.string().required(),
-  PORT: Joi.number().default(9003),
+  PORT: Joi.number().default(9001),
   LOCAL_PORT: Joi.number().default(3003),
   APP_URL: Joi.string().required(),
   MONGODB_URI: Joi.string()
@@ -21,4 +21,6 @@ export const schema = {
   REDIS_PASSWORD: Joi.string().required(),
   REDIS_USERNAME: Joi.string().required(),
   REDIS_DB: Joi.number().required(),
+  RABBITMQ_URL: Joi.string().required(),
+  REPLY_QUEUE: Joi.string().required()
   };

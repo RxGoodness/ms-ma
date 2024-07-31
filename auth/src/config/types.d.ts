@@ -15,4 +15,5 @@ export type ConfigTypes = {
   REDIS_USERNAME: string;
   REDIS_DB: number;
   RABBITMQ_URL: string;
+  REPLY_QUEUE: string;
   };

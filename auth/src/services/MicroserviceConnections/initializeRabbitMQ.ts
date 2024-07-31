@@ -1,7 +1,9 @@
 import amqp from 'amqplib';
 import { validateToken } from '../authToken'
+import { config } from "../../config/env";
 
-const RABBITMQ_URL = 'amqp://localhost';
+const { RABBITMQ_URL, REPLY_QUEUE } =
+  config;
 
 export const initializeRabbitMQ = async () => {
   try {
